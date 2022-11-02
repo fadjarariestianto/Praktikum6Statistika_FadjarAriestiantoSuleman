@@ -1,0 +1,40 @@
+#Latihan Pertama
+iris = read.csv('C:/Users/ASUS/Documents/PrakStatistika/iris.csv
+sumary(iris)
+head(iris)
+by(iris$Petal.Length, iris$Species, summary)
+mean(iris$Sepal.Length)
+var(iris$Sepal.Length)
+boxplot(iris$Petal.Length)
+boxplot(Petal.Length ~ Species, data=iris, main="Petal Length", xlab="Species", ylab="Length")
+
+#Latihan Kedua
+hist(iris$Petal.Length)
+hist(iris$Sepal.Width)
+hist(iris$Sepal.Width[iris$Species=="setosa"])
+hist(iris$Sepal.Width[iris$Species=="versicolor"])
+d=density(iris$Petal.Length)
+plot(d)
+d=density(iris$Sepal.Width[iris$Species=="versicolor"])
+plot (d)
+
+#Latihan Ketiga
+qplot(data_fadjar$AmountSpent, data_fadjar$Salary)
+plot(data_fadjar$AmountSpent, data_fadjar$Salary)
+
+#Latihan Keempat
+fajar=read.csv("C:/Users/ASUS/OneDrive/Desktop/Documents/DirectMarketing.csv")
+hist(fajar$AmountSpent)
+dz=density(fajar$AmountSpent)
+plot(dz)
+fajar=read.csv("C:/Users/ASUS/OneDrive/Desktop/Documents/houseprices.csv")
+plot(fajar$Price, fajar$aqFT)
+
+
+
+
+
+
+
+
+
